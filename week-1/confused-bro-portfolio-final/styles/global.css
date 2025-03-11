@@ -1,10 +1,29 @@
-*{
-  margin:0px;
-  padding:0px;
+* {
+  margin: 0px;
+  padding: 0px;
 }
 
+/*title text style*/
+.title {
+  font-size: 21px;
+  color: white;
+  font-weight: bold;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/*body text style*/
+.body-font {
+  font-size: 15px;
+  color: white;
+  font-weight: medium;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+a {
+  color: #4886f8;
+}
 body {
-  background-color: #1e1e1e;
+  background-color: #35363a;
   display: flex;
   flex: 1;
   flex-direction: column;
@@ -16,7 +35,7 @@ header {
   margin-top: 10px;
   flex: 3;
   align-self: center;
-  width: 70vw;
+  width: 50vw;
   display: flex;
   flex-direction: column;
 }
@@ -24,7 +43,7 @@ header {
 main {
   display: flex;
   flex: auto;
-  width: 70vw;
+  width: 50vw;
   flex-direction: column;
   align-self: center;
 }
@@ -33,23 +52,17 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 4px;
+  font-size: 15px;
 }
 
 #header-view-2 {
   display: flex;
   flex-direction: column;
   text-align: center;
-  width: 80%;
+  width: 100%;
   align-self: center;
-  font-size: 4px;
-  color:white;
-}
-
-.title{
-  font-size: 5px;
-  color:white;
-  font-weight:bold
+  font-size: 15px;
+  color: white;
 }
 
 #header-view-2 > p > span {
@@ -58,40 +71,45 @@ main {
 
 #bio-spans-container {
   display: flex;
+  flex: 1;
   flex-direction: column;
   background-color: #fffefe;
+  color: black;
   border-radius: 5px;
   justify-content: center;
   align-items: flex-start;
   height: fit-content;
-  padding: 8px;
-  padding-right: 20px;
+  /*top, right, bottom, left (clockwise)*/
+  padding: 20px 0px 20px 15px;
+  margin-top: 15px;
   margin-left: 10px;
-  font-size: 4px;
+  font-size: 14.16px;
+  border-radius: 23.59px;
+  box-shadow: 0 4px 6px 2px rgba(0, 0, 0, 0.1); /* Last value (2px) is the spread */
 }
 
 #profile-image-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   color: white;
 }
 
-#profile-image-container > div{
-  margin-bottom:3px
+.bspacer {
+  margin-bottom: 23px;
+}
+
+#profile-image-container > div {
+  margin-bottom: 3px;
 }
 
 #experience-section > div:nth-child(3) {
-  margin-bottom: 4px
-}
-
-#education-section, #experience-section {
-  margin-bottom:4px
+  margin-bottom: 4px;
 }
 
 .education-content-span {
-  font-size: 4px;
+  font-size: 15px;
   color: white;
 }
 
@@ -99,9 +117,9 @@ hr {
   background-color: white;
   height: 1px;
   border-width: 0px;
-  border-radius:25px;
-  margin-top:1px;
-  margin-bottom:1px
+  border-radius: 25px;
+  margin-top: 1px;
+  margin-bottom: 1px;
 }
 
 #hobbies-and-skills-container {
@@ -116,16 +134,13 @@ hr {
   width: 40%;
 }
 
-.hobbies-and-skill-child > span {
-  font-size:6.5px
-}
-
 ul {
   margin-left: 4px;
   padding: 0px;
-  color:white;
+  color: white;
 }
 
-li{
-  font-size: 4px;
+li {
+  font-size: 15px;
+  margin: 0px 0px 0px 20px;
 }

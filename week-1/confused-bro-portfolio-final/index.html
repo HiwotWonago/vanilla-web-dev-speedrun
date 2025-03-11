@@ -1,27 +1,35 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
+    <!-- add fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- local style -->
     <link rel="stylesheet" href="styles/global.css" />
   </head>
   <body>
     <header>
       <section id="header-view-1">
         <div id="profile-image-container">
-          <div><p class="title">SIR CONFUSED BRO</p></div>
+          <div><p class="title">CONFUSED BRO</p></div>
           <div>
             <img
               id="confused-bro-image"
-              height="40"
-              width="40"
+              height="130"
+              width="130"
               src="./assets/images/confused_bro_profile_image.png"
               alt="confused bro profile picture"
             />
           </div>
         </div>
-        <div id="bio-spans-container">
+        <div class="body-font" id="bio-spans-container">
           <span class="bio-spans"
             >email:
             <a
@@ -31,12 +39,7 @@
               >helpaconfusedbro@gmail.com</a
             ></span
           >
-          <span class="bio-spans"
-            >phone:
-            <a target="_blank" rel="noopener noreferrer"
-              >helpaconfusedbro@gmail.com</a
-            ></span
-          >
+          <span class="bio-spans">phone: +234-0955443456</span>
           <span class="bio-spans"
             >LinkedIn:
             <a
@@ -49,19 +52,19 @@
         </div>
       </section>
       <section id="header-view-2">
-        <p>
+        <p class="body-font">
           <span class="title">Summary</span><br />
-          BRO is not a performance-driven and team-oriented Guy, He does not
-          bring with him 2 years of professional experience in being a typical
+          BRO is a performance-driven and team-oriented Guy,<br />
+          bringing over 2 years of professional experience in being a typical<br />
           guy, BRO has a proven track record of working in and ultimately
-          destroying startup environments. He hates working and will most likely
-          not finish your job thank you.
+          destroying<br />
+          startup environments.
         </p>
       </section>
     </header>
     <!-- Main Area -->
-    <main>
-      <section id="education-section">
+    <main class="body-font">
+      <section class="bspacer" id="education-section">
         <p class="title">Education</p>
         <hr />
         <span class="education-content-span"
@@ -82,7 +85,7 @@
           </li>
         </ul>
       </section>
-      <section id="experience-section">
+      <section class="bspacer" id="experience-section">
         <p class="title">Experience</p>
         <hr />
         <div>
